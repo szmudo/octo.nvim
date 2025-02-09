@@ -462,7 +462,26 @@ M.create_issue_mutation = [[
       }
     }
   }
-]] .. fragments.cross_referenced_event .. fragments.issue .. fragments.pull_request .. fragments.connected_event .. fragments.milestoned_event .. fragments.demilestoned_event .. fragments.reaction_groups .. fragments.label_connection .. fragments.label .. fragments.assignee_connection .. fragments.issue_comment .. fragments.assigned_event .. fragments.labeled_event .. fragments.unlabeled_event .. fragments.closed_event .. fragments.reopened_event .. fragments.project_cards .. fragments.issue_timeline_items_connection .. fragments.renamed_title_event .. fragments.issue_information .. fragments.referenced_event
+]] ..
+    fragments.cross_referenced_event ..
+    fragments.issue ..
+    fragments.pull_request ..
+    fragments.connected_event ..
+    fragments.milestoned_event ..
+    fragments.demilestoned_event ..
+    fragments.reaction_groups ..
+    fragments.label_connection ..
+    fragments.label ..
+    fragments.assignee_connection ..
+    fragments.issue_comment ..
+    fragments.assigned_event ..
+    fragments.labeled_event ..
+    fragments.unlabeled_event ..
+    fragments.closed_event ..
+    fragments.reopened_event ..
+    fragments.project_cards ..
+    fragments.issue_timeline_items_connection ..
+    fragments.renamed_title_event .. fragments.issue_information .. fragments.referenced_event
 
 M.close_issue_mutation = [[
 mutation {
@@ -499,7 +518,25 @@ mutation {
     }
   }
 }
-]] .. fragments.cross_referenced_event .. fragments.issue .. fragments.pull_request .. fragments.connected_event .. fragments.milestoned_event .. fragments.demilestoned_event .. fragments.label_connection .. fragments.label .. fragments.reaction_groups .. fragments.assignee_connection .. fragments.issue_comment .. fragments.assigned_event .. fragments.labeled_event .. fragments.unlabeled_event .. fragments.closed_event .. fragments.reopened_event .. fragments.issue_timeline_items_connection .. fragments.issue_information .. fragments.renamed_title_event .. fragments.referenced_event
+]] ..
+    fragments.cross_referenced_event ..
+    fragments.issue ..
+    fragments.pull_request ..
+    fragments.connected_event ..
+    fragments.milestoned_event ..
+    fragments.demilestoned_event ..
+    fragments.label_connection ..
+    fragments.label ..
+    fragments.reaction_groups ..
+    fragments.assignee_connection ..
+    fragments.issue_comment ..
+    fragments.assigned_event ..
+    fragments.labeled_event ..
+    fragments.unlabeled_event ..
+    fragments.closed_event ..
+    fragments.reopened_event ..
+    fragments.issue_timeline_items_connection ..
+    fragments.issue_information .. fragments.renamed_title_event .. fragments.referenced_event
 
 -- https://docs.github.com/en/free-pro-team@latest/graphql/reference/mutations#updateissue
 M.update_issue_state_mutation = [[
@@ -537,7 +574,25 @@ M.update_issue_state_mutation = [[
       }
     }
   }
-]] .. fragments.cross_referenced_event .. fragments.issue .. fragments.pull_request .. fragments.connected_event .. fragments.milestoned_event .. fragments.demilestoned_event .. fragments.reaction_groups .. fragments.label_connection .. fragments.label .. fragments.assignee_connection .. fragments.issue_comment .. fragments.assigned_event .. fragments.labeled_event .. fragments.unlabeled_event .. fragments.closed_event .. fragments.reopened_event .. fragments.issue_timeline_items_connection .. fragments.issue_information .. fragments.renamed_title_event .. fragments.referenced_event
+]] ..
+    fragments.cross_referenced_event ..
+    fragments.issue ..
+    fragments.pull_request ..
+    fragments.connected_event ..
+    fragments.milestoned_event ..
+    fragments.demilestoned_event ..
+    fragments.reaction_groups ..
+    fragments.label_connection ..
+    fragments.label ..
+    fragments.assignee_connection ..
+    fragments.issue_comment ..
+    fragments.assigned_event ..
+    fragments.labeled_event ..
+    fragments.unlabeled_event ..
+    fragments.closed_event ..
+    fragments.reopened_event ..
+    fragments.issue_timeline_items_connection ..
+    fragments.issue_information .. fragments.renamed_title_event .. fragments.referenced_event
 
 -- https://docs.github.com/en/graphql/reference/mutations#reopenissue
 M.reopen_issue_mutation = [[
@@ -577,7 +632,25 @@ mutation($issueId: ID!) {
     }
   }
 }
-]] .. fragments.cross_referenced_event .. fragments.issue .. fragments.pull_request .. fragments.connected_event .. fragments.milestoned_event .. fragments.demilestoned_event .. fragments.reaction_groups .. fragments.label_connection .. fragments.label .. fragments.assignee_connection .. fragments.issue_comment .. fragments.assigned_event .. fragments.labeled_event .. fragments.unlabeled_event .. fragments.closed_event .. fragments.reopened_event .. fragments.issue_timeline_items_connection .. fragments.issue_information .. fragments.renamed_title_event .. fragments.referenced_event
+]] ..
+    fragments.cross_referenced_event ..
+    fragments.issue ..
+    fragments.pull_request ..
+    fragments.connected_event ..
+    fragments.milestoned_event ..
+    fragments.demilestoned_event ..
+    fragments.reaction_groups ..
+    fragments.label_connection ..
+    fragments.label ..
+    fragments.assignee_connection ..
+    fragments.issue_comment ..
+    fragments.assigned_event ..
+    fragments.labeled_event ..
+    fragments.unlabeled_event ..
+    fragments.closed_event ..
+    fragments.reopened_event ..
+    fragments.issue_timeline_items_connection ..
+    fragments.issue_information .. fragments.renamed_title_event .. fragments.referenced_event
 
 -- https://docs.github.com/en/free-pro-team@latest/graphql/reference/mutations#updatepullrequest
 M.update_pull_request_mutation = [[
@@ -683,7 +756,30 @@ M.update_pull_request_state_mutation = [[
       }
     }
   }
-]] .. fragments.cross_referenced_event .. fragments.issue .. fragments.pull_request .. fragments.connected_event .. fragments.milestoned_event .. fragments.demilestoned_event .. fragments.reaction_groups .. fragments.label_connection .. fragments.label .. fragments.assignee_connection .. fragments.issue_comment .. fragments.assigned_event .. fragments.labeled_event .. fragments.unlabeled_event .. fragments.closed_event .. fragments.reopened_event .. fragments.pull_request_review .. fragments.pull_request_commit .. fragments.review_request_removed_event .. fragments.merged_event .. fragments.review_requested_event .. fragments.renamed_title_event .. fragments.review_dismissed_event .. fragments.pull_request_timeline_items_connection
+]] ..
+    fragments.cross_referenced_event ..
+    fragments.issue ..
+    fragments.pull_request ..
+    fragments.connected_event ..
+    fragments.milestoned_event ..
+    fragments.demilestoned_event ..
+    fragments.reaction_groups ..
+    fragments.label_connection ..
+    fragments.label ..
+    fragments.assignee_connection ..
+    fragments.issue_comment ..
+    fragments.assigned_event ..
+    fragments.labeled_event ..
+    fragments.unlabeled_event ..
+    fragments.closed_event ..
+    fragments.reopened_event ..
+    fragments.pull_request_review ..
+    fragments.pull_request_commit ..
+    fragments.review_request_removed_event ..
+    fragments.merged_event ..
+    fragments.review_requested_event ..
+    fragments.renamed_title_event .. fragments.review_dismissed_event .. fragments
+    .pull_request_timeline_items_connection
 
 -- https://docs.github.com/en/graphql/reference/objects#pullrequestreviewthread
 M.pending_review_threads_query = [[
@@ -839,11 +935,7 @@ query($endCursor: String) {
           }
         }
       }
-      statusCheckRollup {
-        state
-      }
-      mergeStateStatus
-      mergeable
+     mergeable
       autoMergeRequest {
         enabledBy { login }
         mergeMethod
@@ -851,7 +943,33 @@ query($endCursor: String) {
     }
   }
 }
-]] .. fragments.cross_referenced_event .. fragments.issue .. fragments.pull_request .. fragments.connected_event .. fragments.milestoned_event .. fragments.demilestoned_event .. fragments.reaction_groups .. fragments.label_connection .. fragments.label .. fragments.assignee_connection .. fragments.issue_comment .. fragments.assigned_event .. fragments.labeled_event .. fragments.unlabeled_event .. fragments.closed_event .. fragments.reopened_event .. fragments.pull_request_review .. fragments.project_cards .. fragments.pull_request_commit .. fragments.review_request_removed_event .. fragments.review_requested_event .. fragments.merged_event .. fragments.renamed_title_event .. fragments.review_dismissed_event .. fragments.pull_request_timeline_items_connection .. fragments.review_thread_information .. fragments.review_thread_comment
+]] ..
+    fragments.cross_referenced_event ..
+    fragments.issue ..
+    fragments.pull_request ..
+    fragments.connected_event ..
+    fragments.milestoned_event ..
+    fragments.demilestoned_event ..
+    fragments.reaction_groups ..
+    fragments.label_connection ..
+    fragments.label ..
+    fragments.assignee_connection ..
+    fragments.issue_comment ..
+    fragments.assigned_event ..
+    fragments.labeled_event ..
+    fragments.unlabeled_event ..
+    fragments.closed_event ..
+    fragments.reopened_event ..
+    fragments.pull_request_review ..
+    fragments.project_cards ..
+    fragments.pull_request_commit ..
+    fragments.review_request_removed_event ..
+    fragments.review_requested_event ..
+    fragments.merged_event ..
+    fragments.renamed_title_event ..
+    fragments.review_dismissed_event ..
+    fragments.pull_request_timeline_items_connection ..
+    fragments.review_thread_information .. fragments.review_thread_comment
 
 -- https://docs.github.com/en/free-pro-team@latest/graphql/reference/objects#issue
 M.issue_query = [[
@@ -887,7 +1005,26 @@ query($endCursor: String) {
     }
   }
 }
-]] .. fragments.cross_referenced_event .. fragments.issue .. fragments.pull_request .. fragments.connected_event .. fragments.milestoned_event .. fragments.demilestoned_event .. fragments.reaction_groups .. fragments.label .. fragments.label_connection .. fragments.assignee_connection .. fragments.issue_comment .. fragments.assigned_event .. fragments.labeled_event .. fragments.unlabeled_event .. fragments.closed_event .. fragments.reopened_event .. fragments.project_cards .. fragments.renamed_title_event .. fragments.issue_timeline_items_connection .. fragments.issue_information .. fragments.referenced_event
+]] ..
+    fragments.cross_referenced_event ..
+    fragments.issue ..
+    fragments.pull_request ..
+    fragments.connected_event ..
+    fragments.milestoned_event ..
+    fragments.demilestoned_event ..
+    fragments.reaction_groups ..
+    fragments.label ..
+    fragments.label_connection ..
+    fragments.assignee_connection ..
+    fragments.issue_comment ..
+    fragments.assigned_event ..
+    fragments.labeled_event ..
+    fragments.unlabeled_event ..
+    fragments.closed_event ..
+    fragments.reopened_event ..
+    fragments.project_cards ..
+    fragments.renamed_title_event ..
+    fragments.issue_timeline_items_connection .. fragments.issue_information .. fragments.referenced_event
 
 -- https://docs.github.com/en/graphql/reference/unions#issueorpullrequest
 M.issue_kind_query = [[
@@ -1105,7 +1242,10 @@ query($endCursor: String) {
     }
   }
 }
-]] .. fragments.reaction_groups .. fragments.label_connection .. fragments.label .. fragments.discussion_info .. fragments.discussion_details .. fragments.discussion_comment
+]] ..
+    fragments.reaction_groups ..
+    fragments.label_connection ..
+    fragments.label .. fragments.discussion_info .. fragments.discussion_details .. fragments.discussion_comment
 
 -- https://docs.github.com/en/graphql/reference/objects#project
 M.projects_query = [[
@@ -1850,7 +1990,32 @@ M.create_pr_mutation = [[
       }
     }
   }
-]] .. fragments.cross_referenced_event .. fragments.issue .. fragments.pull_request .. fragments.connected_event .. fragments.milestoned_event .. fragments.demilestoned_event .. fragments.reaction_groups .. fragments.label_connection .. fragments.label .. fragments.assignee_connection .. fragments.issue_comment .. fragments.assigned_event .. fragments.labeled_event .. fragments.unlabeled_event .. fragments.closed_event .. fragments.reopened_event .. fragments.pull_request_review .. fragments.project_cards .. fragments.pull_request_commit .. fragments.review_request_removed_event .. fragments.review_requested_event .. fragments.merged_event .. fragments.review_dismissed_event .. fragments.pull_request_timeline_items_connection .. fragments.review_thread_information .. fragments.review_thread_comment .. fragments.renamed_title_event
+]] ..
+    fragments.cross_referenced_event ..
+    fragments.issue ..
+    fragments.pull_request ..
+    fragments.connected_event ..
+    fragments.milestoned_event ..
+    fragments.demilestoned_event ..
+    fragments.reaction_groups ..
+    fragments.label_connection ..
+    fragments.label ..
+    fragments.assignee_connection ..
+    fragments.issue_comment ..
+    fragments.assigned_event ..
+    fragments.labeled_event ..
+    fragments.unlabeled_event ..
+    fragments.closed_event ..
+    fragments.reopened_event ..
+    fragments.pull_request_review ..
+    fragments.project_cards ..
+    fragments.pull_request_commit ..
+    fragments.review_request_removed_event ..
+    fragments.review_requested_event ..
+    fragments.merged_event ..
+    fragments.review_dismissed_event ..
+    fragments.pull_request_timeline_items_connection ..
+    fragments.review_thread_information .. fragments.review_thread_comment .. fragments.renamed_title_event
 
 -- https://docs.github.com/en/graphql/reference/queries#user
 M.user_query = [[
@@ -1891,16 +2056,16 @@ query($name: String!, $owner: String!, $n_milestones: Int!) {
 ---@param ... string|table
 ---@return string
 return function(query, ...)
-  local opts = { escape = true }
-  for _, v in ipairs { ... } do
-    if type(v) == "table" then
-      opts = vim.tbl_deep_extend("force", opts, v)
-      break
+    local opts = { escape = true }
+    for _, v in ipairs { ... } do
+        if type(v) == "table" then
+            opts = vim.tbl_deep_extend("force", opts, v)
+            break
+        end
     end
-  end
-  local args = {}
-  for _, v in ipairs { ... } do
-    table.insert(args, v)
-  end
-  return string.format(M[query], unpack(args))
+    local args = {}
+    for _, v in ipairs { ... } do
+        table.insert(args, v)
+    end
+    return string.format(M[query], unpack(args))
 end
