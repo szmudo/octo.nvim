@@ -692,7 +692,7 @@ function M.delete_comment()
                     end
 
                     local threads = resp.data.deletePullRequestReviewComment.pullRequestReview.pullRequest.reviewThreads
-                    .nodes
+                        .nodes
 
                     -- check if there is still at least a PENDING comment
                     local review_was_deleted = true
@@ -709,7 +709,7 @@ function M.delete_comment()
                         review:create(function(resp)
                             review.id = resp.data.addPullRequestReview.pullRequestReview.id
                             local updated_threads = resp.data.addPullRequestReview.pullRequestReview.pullRequest
-                            .reviewThreads.nodes
+                                .reviewThreads.nodes
                             review:update_threads(updated_threads)
                         end)
                     else
@@ -1274,6 +1274,24 @@ function M.pr_checks()
                     end
                 end
             end
+        end,
+    }
+end
+
+function M.auto_merge_pr(...)
+    local bufnr = vim.api.nvim_get_current_buf()
+    local buffer = octo_buffers[bufnr]
+    if not buffer or not buffer:isPullRequest() then
+        return
+    end
+
+    local args = { "pr", "merge", tostring(buffer.number), "--auto", "--squash" }
+
+    gh.run {
+        args = args,
+        cb = function(output, stderr)
+            utils.info(output .. " " .. stderr)
+            writers.write_state(bufnr)
         end,
     }
 end
